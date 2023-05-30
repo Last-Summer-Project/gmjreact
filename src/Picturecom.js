@@ -1,7 +1,7 @@
 import React from "react";
 import "./argon-dashboard.css";
 
-function Picturecom() {
+function Picturecom(props) {
   return (
     <div className="col-md-4" style={{ float: "left" }}>
       <div className="card mb-4 shadow-sm">
@@ -31,7 +31,7 @@ function Picturecom() {
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center">
             <small className="text-muted test1" style={{ fontSize: 20 }}>
-              6월 16일
+              {props.name}
             </small>
           </div>
         </div>
